@@ -25,6 +25,7 @@ public class LogcatPlugin implements FlutterPlugin, MethodCallHandler {
      */
     @Override
     public void onAttachedToEngine(FlutterPluginBinding flutterPluginBinding) {
+        // channel = new MethodChannel(flutterPluginBinding.getBinaryMessenger(), CHANNEL_NAME);
         channel = new MethodChannel(flutterPluginBinding.getBinaryMessenger(), CHANNEL_NAME);
         channel.setMethodCallHandler(this);
     }
